@@ -198,8 +198,8 @@ function Coachmark() {
 							<section id="js-coachmark-tooltip" class="coachmark-tooltip">
 								<header id="js-coachmark-tooltip-text">This is the intro text</header>
 								<article class="coachmark-btns">
-									<button class="coachmark-skip __btn">Skip</button>
-									<button class="coachmark-next __btn">Next</button>
+									<button class="coachmark-skip __btn">Pular</button>
+									<button class="coachmark-next __btn">Próximo</button>
 								</article>
 							</section>
 						</section>
