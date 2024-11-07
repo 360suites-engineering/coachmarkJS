@@ -66,7 +66,7 @@ function Coachmark() {
     -webkit-appearance: none;
   `;
 
-  function init() {
+  function init({nextText = "Next", skipText = "Skip"}) {
     const coachmarkSelectors = document.querySelectorAll("*[data-coachmark]");
 
     // Sort the coachmarks according to their data attributes so that user can decide
@@ -74,7 +74,7 @@ function Coachmark() {
     const coachmarks = Array.from(coachmarkSelectors) || [];
     steps = sortArr(coachmarks);
 
-    const coachmarkElements = getCoachmarkElements();
+    const coachmarkElements = getCoachmarkElements(skipText, nextText);
     document.body.insertAdjacentHTML("beforeend", coachmarkElements);
 
     highlighter = document.getElementById("js-coachmark-interface");
@@ -190,7 +190,7 @@ function Coachmark() {
     }
   }
 
-  function getCoachmarkElements() {
+  function getCoachmarkElements(skipText, nextText) {
     return `
 						<section id="js-coachmark">
             <section id="js-coachmark-overlay" class="coachmark-overlay"></section>
@@ -198,8 +198,8 @@ function Coachmark() {
 							<section id="js-coachmark-tooltip" class="coachmark-tooltip">
 								<header id="js-coachmark-tooltip-text">This is the intro text</header>
 								<article class="coachmark-btns">
-									<button class="coachmark-skip __btn">Pular</button>
-									<button class="coachmark-next __btn">Próximo</button>
+									<button class="coachmark-skip __btn">${skipText}</button>
+									<button class="coachmark-next __btn">${nextText}</button>
 								</article>
 							</section>
 						</section>
