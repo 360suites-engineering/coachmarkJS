@@ -1,5 +1,5 @@
 {
-  "name": "coachmarkjs",
+  "name": "360-coachmark",
   "version": "1.1.0",
   "description": "",
   "main": "dist/bundle.cjs.js",
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AjayPoshak/coachmarkJS.git"
+    "url": "git+https://github.com/360suites-engineering/coachmarkJS"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AjayPoshak/coachmarkJS/issues"
+    "url": "https://github.com/360suites-engineering/coachmarkJS/issues"
   },
-  "homepage": "https://github.com/AjayPoshak/coachmarkJS#readme",
+  "homepage": "https://github.com/360suites-engineering/coachmarkJS#readme",
   "devDependencies": {
     "rollup": "^1.27.0",
     "rollup-plugin-terser": "^5.1.2"

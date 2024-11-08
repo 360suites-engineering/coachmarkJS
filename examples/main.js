@@ -5,7 +5,7 @@ window.onload = () => {
     if(demoLink) demoLink.addEventListener('click', () => {
         new Coachmark().init({
             nextText: "Proximo",
-            skipText: "Lol"
+            skipText: "Pular"
         })
     })
 }
